@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bulma";
+ @import 'bulma-extensions';
+ @import "font-awesome";
+
+
+
+
+.homeBackground{
+  background-image: url("mountain_landscape.jpg");
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #999;
+
+
+ }
+
+ 
+.margin-top {
+  margin-top: 30px;
+}
+
+.less-margin {
+  margin-left: -11px;
+  margin-right: -11px;
+}
+
+.less-margin-right {
+  margin-right: -30px;
+}
+
+.medium-image {
+  width: 370px;
+  height: 300px;
+}

@@ -1,0 +1,128 @@
+
+  <%= render 'layouts/head' %>
+
+        <div class="box container homeBackground">
+            <p class="has-text-centered">
+                <div class="intro column is-8 is-offset-2">
+
+                    <p class="subtitle">
+                      Hypertech  IT Consultants limited is an IT consulting and solution provider with experience spanning over 13 years.Over time, we have added various services to become an all round I.T. consulting and services provision firm. We have developed solutions for both big and small organizations. Our guiding philosophy has always been to enhance our clients' business processes and help their organizations grow" because we believe that when our clients grow, we grow.
+                    </p>
+                </div>
+            </p>
+        </div>
+
+        <div class="card notification level is-flex-mobile">
+          <div class="level-left">
+            <div class="level-item">
+              <a class="button is-dark is-outlined" href="#">
+                  <span class="icon icon has-text-info">
+                      <i class="fa fa-hand-o-right"></i>
+                  </span>
+                  <span>Login</span>
+              </a>
+            </div>
+
+
+          </div>
+          <div class="has-text-centered">
+            <h2 class="subtitle">Services</h2>
+          </div>
+          <a class="button level-right is-dark is-outlined">
+             <span class="icon has-text-info">
+               <i class="fa fa-volume-control-phone">
+              </i>
+             </span>
+             <span>Contact us</span>
+           </a>
+        </div>
+        <section class="container">
+            <div class="columns features">
+                <div class="column is-4">
+                    <div class="card is-shady">
+                        <div class="card-image has-text-centered">
+                          <figure class="image is-4by3">
+                            <%= image_tag "training.jpg" %>
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4>ICT Training </h4>
+                                <p>
+                                  We offer courses from basic ICT to advanced courses in IT. Some of the courses we train in include, office tools (word, excel, access, PowerPoint), IT fundamentals, e-Learning Pedagogy among others.We develop solutions based on the organisation's business processes in order to implement appropriate network and technology platforms.
+                                </p>
+                                <p><%= link_to 'Learn more...', ict_training_path, class: "link"%></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card is-shady">
+                        <div class="card-image has-text-centered">
+                          <figure class="image is-4by3">
+                            <%= image_tag "computing.jpeg" %>
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4>ICT consultancy</h4>
+                                <p>
+                                  Frequently, companies buy technology hoping that it will fit their organization and serve the company’s needs. This approach does not always work in most cases. Hypertech IT Consultants offers ICT Consultancy services to design a guideline for your technology needs and see the strategies put in place realized to achieve results.
+                                </p>
+                                <p><%= link_to 'Learn more...', ict_consultancy_path, class: "link"%></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card is-shady">
+                        <div class="card-image has-text-centered">
+                          <figure class="image is-4by3">
+                            <%= image_tag "web design.png" %>
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4>Web development</h4>
+                                <p>
+                                  We specialize in design and development of visually appealing and communicative Websites that will establish your presence globally.We have a team that specializes in the development of Personal, Professional e-Commerce & e-Learning websites.We also offer other services that include: Domain registration, Search Engine Optimisation, Email serviecs.
+                                </p>
+                                <p><%= link_to 'Learn more...', web_development_path, class: "link"%></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+              <div class="column is-4">
+                <div class="box">
+                  <figure class="image is-4by3">
+                    <%= image_tag "networking.jpg" %>
+                  </figure>
+                </div>
+              </div>
+              <div class="column is-7 box">
+                <div class="card-content">
+                  <p>
+                    <strong>Networking</strong>
+                    <br>
+                    Hypertech IT Consultants specializes in the design, preparations of structured cabling specifications and installation of structured cabling systems with an emphasis on new construction and corporate relocations. Whether your network is ten computers or ten buildings in a campus environment, we can provide the copper and optic fiber cabling needed to connect voice and data across the Local Area Networks (LAN) and Wide Area Networks (WAN). Our cabling installation team is experienced in designing systems for a wide range of buildings and equipment types, with an understanding of the environment and aesthetic issues required.
+                  </p>
+                  <p><%= link_to 'Learn more...', networking_path, class: "link"%></p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="card is-shady margin-top">
+          <div class="columns is-centered card-content">
+            <div class="column is-6">
+              <div class="">
+                <figure class="image is-3by1">
+                  <%= image_tag "serviceyears.png" %>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <%= render 'layouts/footer' %>
