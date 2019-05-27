@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#show'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'home', to: "home#show"
   get 'networking', to: "pages#networking"
@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'products', to: "pages#products"
   get 'portfolio', to: "pages#portfolio"
   get 'blog', to: "pages#blog"
+  root 'home#show'
 end
