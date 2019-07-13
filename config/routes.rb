@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :channels
+  resources :discussions do
+    resources :replies
+  end
+  root 'home#show'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'home', to: "home#show"
@@ -9,5 +15,7 @@ Rails.application.routes.draw do
   get 'products', to: "pages#products"
   get 'portfolio', to: "pages#portfolio"
   get 'blog', to: "pages#blog"
-  root 'home#show'
+
+  devise_for :users, Controllers: {registrations: 'registrations'}
+
 end

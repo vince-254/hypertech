@@ -53,7 +53,7 @@ if ($navbarBurgers.length > 0) {
                                       <%= link_to 'Portfolio', portfolio_path, class: "less-margin"%>
                                     </div>
                                     <div class="navbar-item">
-                                      <%= link_to 'Blog', blog_path, class: "less-margin"%>
+                                      <%= link_to 'Blog', discussions_path, class: "less-margin"%>
                                     </div>
 
                                   </ul>
@@ -78,4 +78,38 @@ if ($navbarBurgers.length > 0) {
           <div class="hero-foot">
 
           </div>
+          <% if current_user %>
+          <section class="notification ">
+            <nav class="level">
+              <div class="level-left">
+                <div class="level-item has-text-centered">
+                  <div class="tag is-info is-medium">
+                    <%= current_user.username%>
+                  </div>
+                </div>
+                <div class="level-item has-text-centered">
+                  <div class="tag is-info is-medium">
+                    <%= current_user.email%>
+                  </div>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item">
+                  <a class="button is-success is-outlined">
+                    Enquiries
+                  </a>
+                    <span >
+                      <%= link_to 'New Post', new_discussion_path, class: "button is-success is-outlined is-outlined fa fa-paper-plane"%>
+                    </span>
+                    <span >
+                      <%= link_to 'Edit user', edit_user_registration_path, class: "button is-warning is-inverted is-outlined fa fa-cogs"%>
+                    </span>
+
+                </div>
+              </div>
+
+            </nav>
+
+          </section>
+          <%end%>
       </section>
