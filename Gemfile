@@ -29,7 +29,7 @@ gem 'bulma-extensions-rails', '~> 1.0', '>= 1.0.30'
 gem 'bulma-rails', '~> 0.7.4'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'simple_form', '~> 4.1'
-gem 'rails_admin', '~> 1.4', '>= 1.4.2'
+gem 'rails_admin', '~> 1.4'
 gem 'rails_admin_material', '~> 0.2.1'
 
 # Use Redis adapter to run Action Cable in production
